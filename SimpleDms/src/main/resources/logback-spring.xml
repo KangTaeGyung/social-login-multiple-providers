@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true">
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>%green(%d) %magenta(%5p) %cyan([%c]) %m%n</Pattern>
+        </encoder>
+    </appender>
+
+    <!-- TODO: 프로젝트 패키지명으로 수정할것 -->
+    <logger name="org.example.simpledms" level="DEBUG" appender-ref="console"/>
+    <logger name="jdbc.sqlonly" level="INFO" appender-ref="console"/>
+    <logger name="jdbc.resultsettable" level="INFO" appender-ref="console"/>
+
+    <!-- TODO: Root : OFF -> INFO(상세정보) -->
+    <root level="OFF">
+        <appender-ref ref="console"/>
+    </root>
+</configuration>
