@@ -16,9 +16,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * fileName : UserDetailsServiceImpl
- * author : GGG
- * date : 2024-03-27
+ * @fileName : UserDetailsServiceImpl
+ * @author : GGG
+ * @since  : 2024-03-27
  * description : DB 에 사용자 있는지 확인하는 클래스(함수)
  *   - 스프링에서 제공한 인터페이스 상속(함수명 고정)
  *   (참고) js 화살표 함수 : function(x){return x+1;} : (x) => x + 1;

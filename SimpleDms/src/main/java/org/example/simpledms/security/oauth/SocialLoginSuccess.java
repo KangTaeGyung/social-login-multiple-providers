@@ -21,9 +21,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * fileName : OAuth2SuccessHandler
- * author : kangtaegyung
- * date : 2022/12/16
+ * @fileName : OAuth2SuccessHandler
+ * @author : kangtaegyung
+ * @since  : 2022/12/16
  * description : 소셜 로그인 성공 후 처리할 클래스
  * 알고리즘
  * 1) 인증된 객체를 홀더에 저장

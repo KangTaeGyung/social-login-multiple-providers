@@ -18,9 +18,9 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 
 /**
- * fileName : AuthTokenFilter
- * author : GGG
- * date : 2024-04-16
+ * @fileName : AuthTokenFilter
+ * @author : GGG
+ * @since  : 2024-04-16
  * description : 게시판 조회시 자동 웹토큰 인증을 위한 클래스
  * 1) 게시판 조회시도 로그인 인증이 필요한데 자동으로 인증받기 위한 클래스임
  *    => 게시판 조회시 spring security 가 자동으로 AuthTokenFilter 클래스를 실행함

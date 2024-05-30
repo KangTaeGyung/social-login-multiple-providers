@@ -17,9 +17,9 @@ import org.springframework.stereotype.Service;
 import java.util.Collections;
 
 /**
- * fileName : CustomOAuth2UserService
- * author : kangtaegyung
- * date : 2022/12/16
+ * @fileName : CustomOAuth2UserService
+ * @author : kangtaegyung
+ * @since  : 2022/12/16
  * description :
  * 알고리즘
  * 1) OAuth2UserService : 유저정보 있는 클래스

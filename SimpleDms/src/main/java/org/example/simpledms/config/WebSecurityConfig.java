@@ -18,9 +18,9 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 /**
- * fileName : WebSecurityConfig
- * author : GGG
- * date : 2024-04-15
+ * @fileName : WebSecurityConfig
+ * @author : GGG
+ * @since : 2024-04-15
  * description :
  *  1) DB 인증을 위한 함수    : passwordEncoder()
  *  2) 패스워드 암호화 함수     : 필수 정의

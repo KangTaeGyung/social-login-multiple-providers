@@ -26,9 +26,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * fileName : AuthController
- * author : GGG
- * date : 2024-04-15
+ * @fileName : AuthController
+ * @author : GGG
+ * @since : 2024-04-15
  * description : 인증(로그인/회원가입) 컨트롤러
  *
  *  로그인 함수 알고리즘

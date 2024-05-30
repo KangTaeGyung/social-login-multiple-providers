@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * fileName : MemberService
- * author : GGG
- * date : 2024-04-15
+ * @fileName : MemberService
+ * @author : GGG
+ * @since  : 2024-04-15
  * description : 회원 서비스 - 회원가입에 사용한 함수 정의
  */
 @Service

@@ -9,9 +9,9 @@ import org.example.simpledms.model.entity.auth.Member;
 import java.util.Map;
 
 /**
- * fileName : OAuthsocialUser
- * author : kangtaegyung
- * date : 2022/12/16
+ * @fileName : OAuthsocialUser
+ * @author : kangtaegyung
+ * @since  : 2022/12/16
  * description : name 는 email 의 @ 앞부분을 잘라서 저장
  * 각각 : email 저장된 속성명
  * google : (String) socialUser.get("email")

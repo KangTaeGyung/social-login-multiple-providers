@@ -9,9 +9,9 @@ import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Where;
 
 /**
- * fileName : Member
- * author : GGG
- * date : 2024-04-15
+ * @fileName : Member
+ * @author : GGG
+ * @since  : 2024-04-15
  * description : 회원 엔티티, 소프트삭제 사용
  */
 @Entity
