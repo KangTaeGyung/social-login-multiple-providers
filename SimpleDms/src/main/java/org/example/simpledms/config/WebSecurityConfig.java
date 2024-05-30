@@ -1,6 +1,7 @@
 package org.example.simpledms.config;
 
 import jakarta.servlet.DispatcherType;
+import lombok.RequiredArgsConstructor;
 import org.example.simpledms.security.oauth.SocialLoginSuccess;
 import org.example.simpledms.security.oauth.SocialLoginServiceCustom;
 import org.example.simpledms.security.jwt.AuthTokenFilter;
@@ -42,13 +43,12 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
  *    6-2) 구글 인가코드 확인 후에 DB 인증, 웹토큰 발행, 프론트로 전송
  */
 @Configuration
+@RequiredArgsConstructor
 public class WebSecurityConfig {
 
-    @Autowired
-    private SocialLoginSuccess socialLoginSuccess;
+    private final SocialLoginSuccess socialLoginSuccess;
 
-    @Autowired
-    private SocialLoginServiceCustom socialLoginServiceCustom ;
+    private final SocialLoginServiceCustom socialLoginServiceCustom ;
 
     @Bean
     public PasswordEncoder passwordEncoder() {

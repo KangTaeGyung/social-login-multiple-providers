@@ -19,7 +19,6 @@ import java.util.Map;
  * (String) response.get("email")
  * kakao  : (String) socialUser.get("account_email")
  */
-
 @Getter
 public class SocialProviders {
     PasswordEncoder encoder = new BCryptPasswordEncoder();
@@ -89,7 +88,7 @@ public class SocialProviders {
     }
 
     //    OAuthsocialUser에서 엔티티를 생성하는 시점은 처음 가입할 때
-//    User 엔티티를 생성
+    //    User 엔티티를 생성
     public Member getDefaultUser() {
 
         return Member.builder()

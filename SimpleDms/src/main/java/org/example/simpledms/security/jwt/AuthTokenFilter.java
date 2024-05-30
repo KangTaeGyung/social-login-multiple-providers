@@ -4,6 +4,7 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.simpledms.security.services.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,12 +45,9 @@ import java.io.IOException;
  * 나) "문자열".substring(시작 인데스번호, 끝인덱스번호) : 시작 ~ 끝사이 문자열 자르기
  */
 @Slf4j
+@RequiredArgsConstructor
 public class AuthTokenFilter extends OncePerRequestFilter {
-
-    @Autowired
     private JwtUtils jwtUtils;
-
-    @Autowired
     private UserDetailsServiceImpl userDetailsService;                                  // DB 인증
 
     @Override
