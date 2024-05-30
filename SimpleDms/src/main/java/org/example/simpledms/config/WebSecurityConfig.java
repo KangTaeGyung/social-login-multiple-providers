@@ -50,15 +50,11 @@ public class WebSecurityConfig {
 
     private final SocialLoginServiceCustom socialLoginServiceCustom ;
 
+    private final AuthTokenFilter authTokenFilter;
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
-    }
-
-//  JWT 웹토큰 자동인증 함수
-    @Bean
-    public AuthTokenFilter authenticationJwtTokenFilter() {
-        return new AuthTokenFilter();
     }
 
 //  img, css, js 등 인증 무시 설정 함수
@@ -94,7 +90,7 @@ public class WebSecurityConfig {
         );
 
 //        5-9)
-        http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
+        http.addFilterBefore(authTokenFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
