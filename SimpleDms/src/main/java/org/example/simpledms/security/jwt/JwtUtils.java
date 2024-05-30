@@ -10,9 +10,9 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 /**
- * fileName : JwtUtils
- * author : GGG
- * date : 2024-04-15
+ * @fileName : JwtUtils
+ * @author : GGG
+ * @since  : 2024-04-15
  * description :
  * - 검증된(인증된) 유저객체 = MemberDto
  * => MemberDto + 추가속성들 == authentication(id, 패스워드, ip, 인증여부등) 객체

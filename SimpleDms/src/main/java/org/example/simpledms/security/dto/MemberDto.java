@@ -9,9 +9,9 @@ import org.springframework.security.core.userdetails.User;
 import java.util.Collection;
 
 /**
- * fileName : MemberDto
- * author : GGG
- * date : 2024-03-27
+ * @fileName : MemberDto
+ * @author : GGG
+ * @since  : 2024-03-27
  * description : 검증된 유저 클래스 정의
  *      TODO
  *          1) 스프링에서 제공한 유저 클래스 : User, UserDetails 2중에 1개 상속

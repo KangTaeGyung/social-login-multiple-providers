@@ -3,9 +3,9 @@ package org.example.simpledms.model.dto;
 import lombok.*;
 
 /**
- * fileName : UserRes
- * author : GGG
- * date : 2024-04-15
+ * @fileName : UserRes
+ * @author : GGG
+ * @since  : 2024-04-15
  * description : 프론트로 전송할 정보를 담은 DTO
  */
 @Setter
