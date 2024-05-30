@@ -1,5 +1,6 @@
 package org.example.simpledms.security.services;
 
+import lombok.RequiredArgsConstructor;
 import org.example.simpledms.model.entity.auth.Member;
 import org.example.simpledms.repository.auth.MemberRepository;
 import org.example.simpledms.security.dto.MemberDto;
@@ -30,9 +31,9 @@ import java.util.Set;
  *      => 사용법 : GrantedAuthority 변수 = new SimpleGrantedAuthority(생성될권한명);
  */
 @Service
+@RequiredArgsConstructor
 public class UserDetailsServiceImpl implements UserDetailsService {
-    @Autowired
-    MemberRepository memberRepository;
+    private final MemberRepository memberRepository;
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {

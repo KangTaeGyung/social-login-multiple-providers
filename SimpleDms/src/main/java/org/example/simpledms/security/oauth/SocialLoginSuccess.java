@@ -2,6 +2,7 @@ package org.example.simpledms.security.oauth;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.simpledms.security.jwt.JwtUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,9 +42,9 @@ import java.util.Map;
  */
 @Slf4j
 @Component
+@RequiredArgsConstructor
 public class SocialLoginSuccess extends SimpleUrlAuthenticationSuccessHandler {
-    @Autowired
-    JwtUtils jwtUtils;
+    private final JwtUtils jwtUtils;
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication)
